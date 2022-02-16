@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- buy.html 05:27  -->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
+	<title>Bitfonix - Stocks and Crypto Currency Website</title>
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Google Font  -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i|Roboto:400,400i,500,500i,700,700i"
+		rel="stylesheet">
+	<!-- icofont icon -->
+	<link rel="stylesheet" href="assets/css/icofont.css">
+	<!-- font awesome icon -->
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+	<!-- animate CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!--- meanmenu Css-->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css" media="all" />
+	<!--- owl carousel Css-->
+	<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+	<!-- venobox -->
+	<link rel="stylesheet" href="assets/venobox/css/venobox.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.4/datatables.min.css" />
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+	<!-- MDB -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Responsive  CSS -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+	<!-- START HEADER SECTION -->
+	<header class="main-header header-2">
+		<div class="sticky-menu">
+			<div class="mainmenu-area">
+				<div class="auto-container">
+					<div class="row">
+						<div class="col-sm-2 col-12 logo navbar-brand">
+							<a href="index.html">
+								<img class="img-fluid" width="148" src="assets/img/logo.png" alt="">
+							</a>
+						</div>
+						<div class="col-lg-5 d-flex align-items-center">
+							<nav class="navbar navbar-expand-lg justify-content-left" style="display: block;">
+								<ul class="navbar-nav">
+									<li><a href="index.html" class="nav-link">Home</a>
+									</li>
+									<li class="dropdown">
+										<a href="about.html" class="nav-link">About</a>
+										<ul class="dropdown-menu">
+											<li><a href="contact.html">Customer Support</a></li>
+											<li><a href="why-us.html">Our Mission</a></li>
+											<li><a href="blog.html">FAQ</a></li>
+										</ul>
+									</li>
+									<li><a href="market.html" class="nav-link">Markets</a></li>
+									<li class="dropdown">
+										<a href="#" class="nav-link">Deposit</a>
+										<ul class="dropdown-menu">
+											<li><a href="deposit-1.html">Fiat</a></li>
+											<li><a href="deposit-2.html">Crypto</a></li>
+										</ul>
+									</li>
+									<li><a href="trade.html" class="nav-link active">Trade</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div
+							class="nv-rgt col-lg-4 col-sm-12 d-flex align-items-center justify-content-center justify-content-sm-end py-2 py-sm-0">
+							<ul>
+								<li class="acc"><a href="login.html" class="nav-link">Login</a></li>
+								<li> &nbsp; &nbsp; &nbsp;</li>
+								<li class="li-active acc"><a href="signup.html" class="nav-link active">Register</a>
+								</li>
+								<li><a href="settings.html" class="nav-link fs-18"><i class="fa fa-cog"></i></a></li>
+								<li> &nbsp; &nbsp;</li>
+								<li>
+									<div class="button r" id="button-1">
+										<input type="checkbox" class="checkbox" />
+										<div class="knobs"></div>
+										<div class="layer"></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- END HEADER SECTION -->
+
+	<div class="container">
+		<ul class="nav nav-tabs mb-3 mt-5" id="myTab0" role="tablist">
+			<li class="nav-item" role="presentation">
+				<button class="nav-link bg-red-primary active" id="home-tab0" data-mdb-toggle="tab"
+					data-mdb-target="#home0" type="button" role="tab" aria-controls="home" aria-selected="true">
+					Postitions
+				</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link bg-red-primary" id="contact-tab0" data-mdb-toggle="tab"
+					data-mdb-target="#contact0" type="button" role="tab" aria-controls="contact" aria-selected="false">
+					orders
+				</button>
+			</li>
+		</ul>
+		<div class="tab-content" id="myTabContent0">
+			<div class="tab-pane fade show active" id="home0" role="tabpanel" aria-labelledby="home-tab0">
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-danger active">All</button>
+					<button type="button" class="btn btn-danger">Stocks</button>
+					<button type="button" class="btn btn-danger">Crypto</button>
+					<button type="button" class="btn btn-danger">Forex</button>
+				  </div>
+				<div class="data-table-cs py-5 border-black">
+					<table class="myTable" id="myTable1" class="display">
+						<thead>
+							<tr>
+								<th>Asset</th>
+								<th>price</th>
+								<th>Quantity</th>
+								<th>Market</th>
+								<th>Value</th>
+								<th>Total Profit(Postions)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="contact0" role="tabpanel" aria-labelledby="contact-tab0">
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-danger active">All</button>
+					<button type="button" class="btn btn-danger">Stocks</button>
+					<button type="button" class="btn btn-danger">Crypto</button>
+					<button type="button" class="btn btn-danger">Forex</button>
+				  </div>
+
+				<div class="data-table-cs py-5 border-black">
+					<table class="myTable" id="myTable2" class="display">
+						<thead>
+							<tr>
+								<th>Asset</th>
+								<th>price</th>
+								<th>Quantity</th>
+								<th>Market</th>
+								<th>Value</th>
+								<th>Total Profit(Postions)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- START FOOTER -->
+	<footer class="footer-2">
+		<!--Footer top -->
+		<div class="footer-top">
+			<div class="auto-container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-0 footer-widget">
+						<div class="footer-section-title col-12 no-padding">
+							<h3>Stay With Us</h3>
+						</div>
+						<!-- END SECTION TITLE -->
+						<div class="col-12 footer-widget-inner">
+							<div class="single-fcontact mb-2">
+								<div class="single-fcontact-icon">
+									<i class="icofont icofont-pin"></i>
+								</div>
+								<div class="single-fcontact-des">
+									<h6>Compnay Name:</h6>
+									<p>10004, Battery Park, New York, USA </p>
+								</div>
+							</div>
+							<div class="single-fcontact mb-2">
+								<div class="single-fcontact-icon">
+									<i class="icofont icofont-envelope-open"></i>
+								</div>
+								<div class="single-fcontact-des">
+									<h6>Email Us:</h6>
+									<p>info@yoursite.com</p>
+								</div>
+							</div>
+							<div class="single-fcontact mb-2">
+								<div class="single-fcontact-icon">
+									<i class="icofont icofont-mobile-phone"></i>
+								</div>
+								<div class="single-fcontact-des">
+									<h6>Phone Number:</h6>
+									<p>123-456-0975</p>
+								</div>
+							</div>
+							<div class="single-fcontact">
+								<div class="single-fcontact-icon">
+									<i class="icofont icofont-eye-alt"></i>
+								</div>
+								<div class="single-fcontact-des">
+									<h6>Door Open:</h6>
+									<p>Mon - Sun : 09:00 - 18:00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Widget -->
+					<div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-lg-0 mb-md-0 mb-5 footer-widget">
+						<div class="footer-section-title col-12 no-padding">
+							<h3>latest Post</h3>
+						</div>
+						<!-- END SECTION TITLE -->
+						<div class="col-12 footer-widget-inner recentPost">
+							<div class="singleRecpost">
+								<img src="assets/img/blog/1.jpg" alt="" class="img-fluid">
+								<h6 class="recTitle">
+									<a href="#">Lorem ipsum dolor sit amet, consectetuer.</a>
+								</h6>
+								<p class="posted-on">3 DEC 2018</p>
+							</div>
+							<div class="singleRecpost">
+								<img src="assets/img/blog/2.jpg" alt="" class="img-fluid">
+								<h6 class="recTitle">
+									<a href="#">Lorem ipsum dolor sit amet, consectetuer.</a>
+								</h6>
+								<p class="posted-on">4 DEC 2018</p>
+							</div>
+							<div class="singleRecpost">
+								<img src="assets/img/blog/3.jpg" alt="" class="img-fluid">
+								<h6 class="recTitle">
+									<a href="#">Lorem ipsum dolor sit amet, consectetuer.</a>
+								</h6>
+								<p class="posted-on">5 DEC 2018</p>
+							</div>
+						</div>
+					</div>
+					<!-- End Widget -->
+					<div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-lg-0 mb-md-0 mb-5 footer-widget">
+						<div class="footer-section-title col-12 no-padding">
+							<h3>Malling List</h3>
+						</div>
+						<!-- END SECTION TITLE -->
+						<div class="col-12 about mb-2">
+							<p>Lorem ipsum dolor ametconsde etur adipiscing elit, sed dositlor eiusmod tempor
+								incididunt
+								utlr labo reetdolor emagna aliqua.</p>
+						</div>
+						<div class="col-12 footer-news">
+							<form action="#">
+								<div class="row">
+									<div class="form-group col-lg-9 col-md-9 col-8 pr-lg-0 pr-md-0 pr-2">
+										<input name="semail" class="form-control" placeholder="Email Address"
+											type="email">
+									</div>
+									<button type="submit" class="col-lg-3 col-md-2 col-2 p-0 fnews-btn"><i
+											class="fa fa-paper-plane"></i></button>
+								</div>
+							</form>
+						</div>
+						<div class="col-12 about mt-3">
+							<p>We promise that we don't do spam.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!--Footer Bottom -->
+		<div class="copyright">
+			<div class="auto-container">
+				<div class="row">
+					<div class="col-12 copyright-text text-center">
+						<p><a href="#" target="_blank">Bitfonix</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- END FOOTER -->
+
+
+	<!-- Latest jQuery -->
+	<script src="assets/js/jquery-2.2.4.min.js"></script>
+	<!-- popper js -->
+	<script src="assets/bootstrap/js/popper.min.js"></script>
+	<!-- Latest compiled and minified Bootstrap -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- meanmenu min js  -->
+	<script src="assets/js/jquery.meanmenu.min.js"></script>
+	<!-- Sticky JS -->
+	<script src="assets/js/jquery.sticky.js"></script>
+	<!-- owl-carousel min js  -->
+	<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+	<!-- jquery appear js  -->
+	<script src="assets/js/jquery.appear.js"></script>
+	<!-- countTo js -->
+	<script src="assets/js/jquery.inview.min.js"></script>
+	<!-- venobox js -->
+	<script src="assets/venobox/js/venobox.min.js"></script>
+	<script src="assets/js/masonry.pkgd.min.js"></script>
+	<!-- scroll to top js -->
+	<script src="assets/js/scrolltopcontrol.js"></script>
+	<!-- WOW - Reveal Animations When You Scroll -->
+	<script src="assets/js/wow.min.js"></script>
+	<!-- scripts js -->
+	<script src="assets/js/scripts.js"></script>
+</body>
+
+
+<!-- buy.html 05:27  -->
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="assets/js/candle-chart.js"></script>
+<script>
+	jQuery("#carousel").owlCarousel({
+		autoplay: true,
+		rewind: true,
+		/* use rewind if you don't want loop */
+		margin: 20,
+		/*
+  animateOut: 'fadeOut',
+  animateIn: 'fadeIn',
+  */
+		responsiveClass: true,
+		loop: true,
+		autoHeight: true,
+		autoplayTimeout: 7000,
+		smartSpeed: 800,
+		nav: false,
+		responsive: {
+			0: {
+				items: 1
+			},
+
+			600: {
+				items: 3
+			},
+
+			1024: {
+				items: 4
+			},
+
+			1366: {
+				items: 4
+			}
+		}
+	});
+
+	$(document).ready( function () {
+    $('#myTable1').DataTable();
+	$('#myTable2').DataTable();
+} );
+</script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.4/datatables.min.js"></script>
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+
+</html>
